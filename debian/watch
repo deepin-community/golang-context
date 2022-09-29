@@ -1,0 +1,5 @@
+# uscan(1) configuration file.
+version=4
+
+ https://github.com/gorilla/context/releases \
+ .*/archive/v?(\d[\d\.]+)\.tar\.gz

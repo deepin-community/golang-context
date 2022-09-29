@@ -1,0 +1,61 @@
+golang-context (1.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * Switch to XS-Go-Import-Path
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Thu, 08 Feb 2018 09:14:37 +0100
+
+golang-context (1.1-2) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Tianon Gravi ]
+  * Update Maintainer to be the pkg-go team proper
+  * Update Build-Depends to use golang-any instead of golang-go
+
+ -- Paul Tagliamonte <paultag@debian.org>  Tue, 08 Aug 2017 20:04:45 -0700
+
+golang-context (1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Tim Potter ]
+  * New upstream release (Closes: #823463)
+  * Transition to new package name (golang-github-gorilla-context-dev)
+  * Standards-Version: 3.9.8
+
+  [ Dmitry Smirnov ]
+  * Added "watch" file.
+  * debian/compat to version 9.
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 17 May 2016 13:41:04 +1000
+
+golang-context (0.0~git20140604.1.14f550f-1) unstable; urgency=medium
+
+  * Upstream bump to 14f550f (2014-06-04)
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Sat, 23 Aug 2014 22:26:27 -0400
+
+golang-context (0.0~git20140522.1.1f3e8a4-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update copyright to match upstream (BSD-3 vs MIT/Expat). Thanks for the
+    catch, alteholz. (Closes: #751423)
+
+ -- Paul Tagliamonte <paultag@debian.org>  Thu, 12 Jun 2014 21:50:59 -0400
+
+golang-context (0.0~git20140522.1.1f3e8a4-1) unstable; urgency=medium
+
+  * We're hijacking the golang-context-dev bianry because we want a source
+    rename to bring it in-line with go policy.
+  * Upstream bump to 1f3e8a4 (2014-05-22)
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Wed, 11 Jun 2014 20:20:31 -0400
+
+golang-context-dev (0.0~git20130701-1) unstable; urgency=low
+
+  * Initial release (Closes: #715521)
+
+ -- Daniel Mizyrycki <mzdaniel@glidelink.net>  Mon, 22 Jul 2013 10:27:52 -0700

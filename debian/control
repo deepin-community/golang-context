@@ -1,0 +1,32 @@
+Source: golang-context
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Tianon Gravi <admwiggin@gmail.com>,
+           Tim Potter <tpot@hpe.com>
+Build-Depends: debhelper (>= 9), dh-golang, golang-any
+Standards-Version: 3.9.8
+Homepage: https://github.com/gorilla/context
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-context.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-go/packages/golang-context.git
+XS-Go-Import-Path: github.com/gorilla/context
+
+Package: golang-github-gorilla-context-dev
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: golang-context-dev (<< 1.1~)
+Replaces: golang-context-dev (<< 1.1~)
+Description: General purpose registry for global request variables
+ context is part of the Gorilla web toolkit. It stores values shared during a
+ request lifetime. For example, a router can set variables extracted from the
+ URL and later application handlers can access those values, or it can be used
+ to store sessions values to be saved at the end of a request. There are
+ several others common uses.
+
+Package: golang-context-dev
+Section: oldlibs
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, golang-github-gorilla-context-dev
+Description: Transitional package for golang-github-gorilla-context-dev
+ This is a transitional package to ease upgrades to the
+ golang-github-gorilla-context-dev package.
